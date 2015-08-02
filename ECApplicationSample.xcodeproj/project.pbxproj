@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C92ACD441B6E41AB008D0000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD431B6E41AB008D0000 /* main.m */; };
-		C92ACD471B6E41AB008D0000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD461B6E41AB008D0000 /* AppDelegate.m */; };
 		C92ACD4A1B6E41AB008D0000 /* ECApplicationSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD481B6E41AB008D0000 /* ECApplicationSample.xcdatamodeld */; };
 		C92ACD4D1B6E41AB008D0000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD4C1B6E41AB008D0000 /* ViewController.m */; };
 		C92ACD501B6E41AB008D0000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92ACD4E1B6E41AB008D0000 /* Main.storyboard */; };
 		C92ACD521B6E41AB008D0000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92ACD511B6E41AB008D0000 /* Images.xcassets */; };
 		C92ACD551B6E41AB008D0000 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92ACD531B6E41AB008D0000 /* LaunchScreen.xib */; };
 		C92ACD611B6E41AC008D0000 /* ECApplicationSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD601B6E41AC008D0000 /* ECApplicationSampleTests.m */; };
+		C92ACD6D1B6E4330008D0000 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD6C1B6E4330008D0000 /* ECAppDelegate.m */; };
+		C92ACD7C1B6E45C2008D0000 /* ECBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD7B1B6E45C2008D0000 /* ECBaseViewController.m */; };
+		C92ACD851B6E4A04008D0000 /* ECBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD841B6E4A04008D0000 /* ECBaseTabBarViewController.m */; };
+		C92ACD881B6E4A73008D0000 /* ECRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD871B6E4A73008D0000 /* ECRootViewController.m */; };
+		C92ACD8D1B6E546F008D0000 /* ECFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92ACD8C1B6E546F008D0000 /* ECFunctionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +35,6 @@
 		C92ACD3E1B6E41AB008D0000 /* ECApplicationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECApplicationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92ACD421B6E41AB008D0000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C92ACD431B6E41AB008D0000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C92ACD451B6E41AB008D0000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C92ACD461B6E41AB008D0000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C92ACD491B6E41AB008D0000 /* ECApplicationSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ECApplicationSample.xcdatamodel; sourceTree = "<group>"; };
 		C92ACD4B1B6E41AB008D0000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C92ACD4C1B6E41AB008D0000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -42,6 +44,16 @@
 		C92ACD5A1B6E41AC008D0000 /* ECApplicationSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECApplicationSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92ACD5F1B6E41AC008D0000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C92ACD601B6E41AC008D0000 /* ECApplicationSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECApplicationSampleTests.m; sourceTree = "<group>"; };
+		C92ACD6B1B6E4330008D0000 /* ECAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECAppDelegate.h; path = Delegate/ECAppDelegate.h; sourceTree = "<group>"; };
+		C92ACD6C1B6E4330008D0000 /* ECAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECAppDelegate.m; path = Delegate/ECAppDelegate.m; sourceTree = "<group>"; };
+		C92ACD7A1B6E45C2008D0000 /* ECBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECBaseViewController.h; sourceTree = "<group>"; };
+		C92ACD7B1B6E45C2008D0000 /* ECBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECBaseViewController.m; sourceTree = "<group>"; };
+		C92ACD831B6E4A04008D0000 /* ECBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECBaseTabBarViewController.h; sourceTree = "<group>"; };
+		C92ACD841B6E4A04008D0000 /* ECBaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECBaseTabBarViewController.m; sourceTree = "<group>"; };
+		C92ACD861B6E4A73008D0000 /* ECRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECRootViewController.h; sourceTree = "<group>"; };
+		C92ACD871B6E4A73008D0000 /* ECRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECRootViewController.m; sourceTree = "<group>"; };
+		C92ACD8B1B6E546F008D0000 /* ECFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECFunctionViewController.h; sourceTree = "<group>"; };
+		C92ACD8C1B6E546F008D0000 /* ECFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECFunctionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,11 @@
 		C92ACD401B6E41AB008D0000 /* ECApplicationSample */ = {
 			isa = PBXGroup;
 			children = (
-				C92ACD451B6E41AB008D0000 /* AppDelegate.h */,
-				C92ACD461B6E41AB008D0000 /* AppDelegate.m */,
+				C92ACD7D1B6E474C008D0000 /* Sections */,
+				C92ACD721B6E4509008D0000 /* General */,
+				C92ACD701B6E43B9008D0000 /* Utils */,
+				C92ACD711B6E43B9008D0000 /* Vendors */,
+				C92ACD6A1B6E42F9008D0000 /* Delagate */,
 				C92ACD4B1B6E41AB008D0000 /* ViewController.h */,
 				C92ACD4C1B6E41AB008D0000 /* ViewController.m */,
 				C92ACD4E1B6E41AB008D0000 /* Main.storyboard */,
@@ -120,6 +135,118 @@
 				C92ACD5F1B6E41AC008D0000 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C92ACD6A1B6E42F9008D0000 /* Delagate */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD6B1B6E4330008D0000 /* ECAppDelegate.h */,
+				C92ACD6C1B6E4330008D0000 /* ECAppDelegate.m */,
+			);
+			name = Delagate;
+			sourceTree = "<group>";
+		};
+		C92ACD701B6E43B9008D0000 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C92ACD711B6E43B9008D0000 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C92ACD721B6E4509008D0000 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD891B6E521B008D0000 /* Categories */,
+				C92ACD8A1B6E521B008D0000 /* Cells */,
+				C92ACD791B6E45C2008D0000 /* Classes */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		C92ACD791B6E45C2008D0000 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD7A1B6E45C2008D0000 /* ECBaseViewController.h */,
+				C92ACD7B1B6E45C2008D0000 /* ECBaseViewController.m */,
+				C92ACD831B6E4A04008D0000 /* ECBaseTabBarViewController.h */,
+				C92ACD841B6E4A04008D0000 /* ECBaseTabBarViewController.m */,
+			);
+			name = Classes;
+			path = General/Classes;
+			sourceTree = "<group>";
+		};
+		C92ACD7D1B6E474C008D0000 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD7E1B6E49A2008D0000 /* ECFunctionViewController */,
+				C92ACD7F1B6E49A2008D0000 /* ECOperationViewController */,
+				C92ACD801B6E49A2008D0000 /* ECRootViewController */,
+				C92ACD811B6E49A2008D0000 /* ECSettingViewController */,
+				C92ACD821B6E49A2008D0000 /* ECTabBarViewController */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C92ACD7E1B6E49A2008D0000 /* ECFunctionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD8B1B6E546F008D0000 /* ECFunctionViewController.h */,
+				C92ACD8C1B6E546F008D0000 /* ECFunctionViewController.m */,
+			);
+			path = ECFunctionViewController;
+			sourceTree = "<group>";
+		};
+		C92ACD7F1B6E49A2008D0000 /* ECOperationViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECOperationViewController;
+			sourceTree = "<group>";
+		};
+		C92ACD801B6E49A2008D0000 /* ECRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C92ACD861B6E4A73008D0000 /* ECRootViewController.h */,
+				C92ACD871B6E4A73008D0000 /* ECRootViewController.m */,
+			);
+			path = ECRootViewController;
+			sourceTree = "<group>";
+		};
+		C92ACD811B6E49A2008D0000 /* ECSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECSettingViewController;
+			sourceTree = "<group>";
+		};
+		C92ACD821B6E49A2008D0000 /* ECTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECTabBarViewController;
+			sourceTree = "<group>";
+		};
+		C92ACD891B6E521B008D0000 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			path = General/Categories;
+			sourceTree = "<group>";
+		};
+		C92ACD8A1B6E521B008D0000 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			path = General/Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92ACD471B6E41AB008D0000 /* AppDelegate.m in Sources */,
 				C92ACD4A1B6E41AB008D0000 /* ECApplicationSample.xcdatamodeld in Sources */,
 				C92ACD4D1B6E41AB008D0000 /* ViewController.m in Sources */,
+				C92ACD8D1B6E546F008D0000 /* ECFunctionViewController.m in Sources */,
+				C92ACD6D1B6E4330008D0000 /* ECAppDelegate.m in Sources */,
+				C92ACD851B6E4A04008D0000 /* ECBaseTabBarViewController.m in Sources */,
 				C92ACD441B6E41AB008D0000 /* main.m in Sources */,
+				C92ACD881B6E4A73008D0000 /* ECRootViewController.m in Sources */,
+				C92ACD7C1B6E45C2008D0000 /* ECBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

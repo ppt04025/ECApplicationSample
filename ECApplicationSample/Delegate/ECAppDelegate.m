@@ -3,20 +3,41 @@
 //  ECApplicationSample
 //
 //  Created by Xenon Chau on 15/8/2.
-//  Copyright (c) 2015年 EasyCoding & Play4Fun. All rights reserved.
+//  Copyright (c) 2015 EasyCoding & Play4Fun. All rights reserved.
 //
 
-#import "AppDelegate.h"
+/**
+ *  The project using pure code for developing.
+ *  Using MVC Design Patterns.
+ *  It was designed for using by different application.
+ *  Open Source followed GNU GENERAL PUBLIC LICENSE Version 2.0 protocol.
+ *  @author Xenon Chau
+ *  @date   2015-08-02
+ */
 
-@interface AppDelegate ()
+#import "ECAppDelegate.h"
+#import "ECBaseTabBarViewController.h"
+
+#import "ECRootViewController.h"
+
+@interface ECAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation ECAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ECBaseTabBarViewController * rootTabBarViewController = [[ECBaseTabBarViewController alloc] init];
+    
+    [_window setRootViewController:rootTabBarViewController];
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
