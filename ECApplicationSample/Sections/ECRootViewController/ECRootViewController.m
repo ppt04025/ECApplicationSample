@@ -26,11 +26,17 @@
     
     UIButton * fuckBtn = [[UIButton alloc] initWithFrame:self.view.frame];
     [fuckBtn setTitle:@"老不羞" forState:UIControlStateNormal];
+    [fuckBtn setTitle:@"是梁应俊" forState:UIControlStateSelected];
     [fuckBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:33]];
     [fuckBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [fuckBtn setBackgroundColor:[UIColor yellowColor]];
+    [fuckBtn addTarget:self action:@selector(fuckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:fuckBtn];
     
+}
+
+- (void)fuckButtonAction:(UIButton *)button {
+    [button setSelected:![button isSelected]];
 }
 
 - (void)didReceiveMemoryWarning {
