@@ -24,6 +24,13 @@
     
     [self setTabBarItem:[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0]];
     
+    UIButton * fuckBtn = [[UIButton alloc] initWithFrame:self.view.frame];
+    [fuckBtn setTitle:@"老不羞" forState:UIControlStateNormal];
+    [fuckBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:33]];
+    [fuckBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [fuckBtn setBackgroundColor:[UIColor yellowColor]];
+    [self.view addSubview:fuckBtn];
+    
 }
 
 - (void)didReceiveMemoryWarning {
