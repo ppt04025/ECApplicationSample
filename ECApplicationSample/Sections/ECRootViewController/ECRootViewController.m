@@ -18,25 +18,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[self view] setBackgroundColor:[UIColor greenColor]];
+    [[self view] setBackgroundColor:[UIColor yellowColor]];
     
     [self setTitle:@"零度可乐"];
     
     [self setTabBarItem:[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0]];
     
-    UIButton * fuckBtn = [[UIButton alloc] initWithFrame:self.view.frame];
-    [fuckBtn setTitle:@"老不羞" forState:UIControlStateNormal];
-    [fuckBtn setTitle:@"是梁应俊" forState:UIControlStateSelected];
-    [fuckBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:33]];
-    [fuckBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [fuckBtn setBackgroundColor:[UIColor yellowColor]];
-    [fuckBtn addTarget:self action:@selector(fuckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:fuckBtn];
+    UIButton * switchButton = [[UIButton alloc] initWithFrame:self.view.frame];
+    [switchButton setTitle:@"红色" forState:UIControlStateNormal];
+    [switchButton setTitle:@"黄色" forState:UIControlStateSelected];
+    [switchButton.titleLabel setFont:[UIFont boldSystemFontOfSize:33]];
+    [switchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [switchButton setBackgroundColor:[UIColor clearColor]];
+    [switchButton addTarget:self action:@selector(switchButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:switchButton];
     
 }
 
-- (void)fuckButtonAction:(UIButton *)button {
+- (void)switchButtonAction:(UIButton *)button {
+    
     [button setSelected:![button isSelected]];
+    
+    if ([button isSelected]) {
+        
+        [[self view] setBackgroundColor:[UIColor redColor]];
+        
+    } else {
+        
+        [[self view] setBackgroundColor:[UIColor yellowColor]];
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,7 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[self view] setBackgroundColor:[UIColor redColor]];
+    [[self view] setBackgroundColor:[UIColor blueColor]];
+    
+    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+    NSNumber * number = [f numberFromString:@"10003009.12"];
+    NSString * chineseCurrency = [ECTransformUtils chineseCapitalForNumber:number];
+    NSLog(@"%@",chineseCurrency);
+    
     
 }
 
