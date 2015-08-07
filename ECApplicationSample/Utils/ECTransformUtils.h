@@ -13,5 +13,13 @@
 + (NSString *)chineseCapitalForNumber:(NSNumber *)number;
 
 + (BOOL)isNullString:(NSString *)string;
+/**
+ *  An util method to validate idCard number
+ *
+ *  @param idCardNumber idCard number string
+ *
+ *  @return YES if valid
+ */
++ (bool)validateIdCardNumber:(NSString *)idCardNumber;
 
 @end
